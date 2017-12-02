@@ -27,6 +27,12 @@
         "mac": "Command+Shift+D"
       },
       "description": "Duplicate tab"
+    },
+    "close-other-tabs-shortcut": {
+      "description": "Close Other Tabs",
+      "suggested_key": {
+        "default": "Alt+Shift+W"
+      }
     }
   },
   "homepage_url": "https://github.com/zertosh/duplicate-tab",
