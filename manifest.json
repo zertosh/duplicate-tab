@@ -36,8 +36,5 @@
     }
   },
   "homepage_url": "https://github.com/zertosh/duplicate-tab",
-  "minimum_chrome_version": "45",
-  "permissions": [
-    "tabs"
-  ]
+  "minimum_chrome_version": "45"
 }
