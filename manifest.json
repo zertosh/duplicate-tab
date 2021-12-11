@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Duplicate Tab",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Duplicate tab",
   "icons": {
     "16": "icon16.png",
