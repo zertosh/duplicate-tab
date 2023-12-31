@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Duplicate Tab",
   "version": "1.2.0",
   "description": "Duplicate tab",
@@ -8,17 +8,14 @@
     "48": "icon48.png",
     "128": "icon128.png"
   },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "32": "icon32.png"
     },
     "default_title": "Duplicate tab"
   },
   "background": {
-    "persistent": false,
-    "scripts": [
-      "background.js"
-    ]
+    "service_worker": "service-worker.js"
   },
   "commands": {
     "duplicate-tab-keyboard-shortcut": {
@@ -36,5 +33,5 @@
     }
   },
   "homepage_url": "https://github.com/zertosh/duplicate-tab",
-  "minimum_chrome_version": "45"
+  "minimum_chrome_version": "120"
 }

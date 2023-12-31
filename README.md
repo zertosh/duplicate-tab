@@ -15,7 +15,7 @@ Chrome extension to duplicate the current tab.
 
 Consumes minimal resources:
 
-  * Runs as an [event page](https://developer.chrome.com/extensions/event_pages#lifetime) rather than a background page. So there is no persistent process running.
+  * Uses a Manifest V3 short-lived light-weight [service worker](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle#idle-shutdown) that only responds to narrow events.
   * Does not collect analytics.
 
 ## Third Party Notices
