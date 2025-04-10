@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Duplicate Tab",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Duplicate tab",
   "icons": {
     "16": "icon16.png",
@@ -15,13 +15,14 @@
     "default_title": "Duplicate tab"
   },
   "background": {
-    "service_worker": "service-worker.js"
+    "scripts": [
+      "service-worker.js"
+    ]
   },
   "commands": {
     "duplicate-tab-keyboard-shortcut": {
       "suggested_key": {
-        "default": "Ctrl+Shift+D",
-        "mac": "Command+Shift+D"
+        "default": "Alt+Shift+D"
       },
       "description": "Duplicate tab"
     },
@@ -33,5 +34,10 @@
     }
   },
   "homepage_url": "https://github.com/zertosh/duplicate-tab",
-  "minimum_chrome_version": "120"
+  "minimum_chrome_version": "120",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "zertosh@gmail.com"
+    }
+  }
 }
