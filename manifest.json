@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Duplicate Tab",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Duplicate tab",
   "icons": {
     "16": "icon16.png",
@@ -34,7 +34,6 @@
     }
   },
   "homepage_url": "https://github.com/zertosh/duplicate-tab",
-  "minimum_chrome_version": "120",
   "browser_specific_settings": {
     "gecko": {
       "id": "zertosh@gmail.com"
