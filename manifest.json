@@ -1,18 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "Duplicate Tab",
-  "version": "2.0.0",
-  "description": "Duplicate tab",
+  "name": "__MSG_extName__",
+  "version": "2.1.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "permissions": [
+    "storage"
+  ],
   "icons": {
     "16": "icon16.png",
+    "32": "icon32.png",
     "48": "icon48.png",
     "128": "icon128.png"
   },
   "action": {
     "default_icon": {
+      "16": "icon16.png",
+      "24": "icon24.png",
       "32": "icon32.png"
     },
-    "default_title": "Duplicate tab"
+    "default_title": "__MSG_actionTitle__"
   },
   "background": {
     "service_worker": "service-worker.js"
@@ -20,18 +27,17 @@
   "commands": {
     "duplicate-tab-keyboard-shortcut": {
       "suggested_key": {
-        "default": "Ctrl+Shift+D",
-        "mac": "Command+Shift+D"
+        "default": "Alt+Shift+D"
       },
-      "description": "Duplicate tab"
+      "description": "__MSG_commandDuplicate__"
     },
     "close-other-tabs-shortcut": {
-      "description": "Close Other Tabs",
       "suggested_key": {
         "default": "Alt+Shift+W"
-      }
+      },
+      "description": "__MSG_commandCloseOthers__"
     }
   },
   "homepage_url": "https://github.com/zertosh/duplicate-tab",
-  "minimum_chrome_version": "120"
+  "minimum_chrome_version": "102"
 }

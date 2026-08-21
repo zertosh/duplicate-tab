@@ -1,0 +1,67 @@
+{
+  "extName": {
+    "message": "Duplicate Tab",
+    "description": "Extension name, shown in Chrome and in the Web Store listing."
+  },
+  "extDescription": {
+    "message": "Дублирование текущей вкладки и закрытие всех остальных — одним кликом или горячей клавишей.",
+    "description": "Web Store listing description. Chrome truncates this at 132 characters."
+  },
+  "actionTitle": {
+    "message": "Дублировать вкладку",
+    "description": "Tooltip on the toolbar button."
+  },
+  "commandDuplicate": {
+    "message": "Дублировать вкладку",
+    "description": "Shortcut label in chrome://extensions/shortcuts."
+  },
+  "commandCloseOthers": {
+    "message": "Закрыть остальные вкладки",
+    "description": "Shortcut label in chrome://extensions/shortcuts."
+  },
+
+  "welcomeTitle": {
+    "message": "Duplicate Tab готов к работе",
+    "description": "Heading on the welcome page shown once after install."
+  },
+  "welcomeLede": {
+    "message": "Нажмите значок на панели, чтобы дублировать текущую вкладку, или воспользуйтесь горячей клавишей.",
+    "description": "Subheading on the welcome page."
+  },
+  "shortcutNotSet": {
+    "message": "Не назначена",
+    "description": "Shown instead of keys when Chrome could not bind a shortcut."
+  },
+  "ctrlDHeading": {
+    "message": "Хотите Ctrl + D?",
+    "description": "Section heading about reassigning the duplicate shortcut."
+  },
+  "ctrlDBody": {
+    "message": "Это возможно, но назначить комбинацию придётся вручную. Chrome не отдаёт её расширению по умолчанию, потому что она уже занята командой «Добавить в закладки».",
+    "description": "Explains why Ctrl+D cannot be a default shortcut."
+  },
+  "ctrlDHow": {
+    "message": "Откройте страницу горячих клавиш, найдите Duplicate Tab и запишите Ctrl + D (Command + D на macOS) поверх значения по умолчанию.",
+    "description": "Step-by-step for reassigning the shortcut."
+  },
+  "openShortcuts": {
+    "message": "Открыть горячие клавиши",
+    "description": "Button that opens chrome://extensions/shortcuts."
+  },
+  "ctrlDNote": {
+    "message": "Учтите: Ctrl + D перестанет добавлять закладки, а перенести эту команду на другую комбинацию Chrome не позволяет. Добавлять закладки по-прежнему можно звёздочкой в адресной строке или через меню закладок.",
+    "description": "Caveat about overriding the bookmark shortcut."
+  },
+  "closeOthersHeading": {
+    "message": "Закрыть остальные вкладки",
+    "description": "Section heading on the welcome page."
+  },
+  "closeOthersBody": {
+    "message": "Закрывает все вкладки текущего окна, кроме активной. Закреплённые и сгруппированные вкладки всегда остаются на месте, а закрытые можно вернуть по одной через Ctrl + Shift + T.",
+    "description": "Describes what the close-other-tabs command does."
+  },
+  "footerText": {
+    "message": "Свободное ПО с открытым исходным кодом. Без аналитики, слежки и сетевых запросов.",
+    "description": "Welcome page footer, followed by a link to the repository."
+  }
+}
