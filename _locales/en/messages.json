@@ -1,0 +1,67 @@
+{
+  "extName": {
+    "message": "Duplicate Tab",
+    "description": "Extension name, shown in Chrome and in the Web Store listing."
+  },
+  "extDescription": {
+    "message": "Duplicate the current tab, or close every other tab, with one click or a keyboard shortcut.",
+    "description": "Web Store listing description. Chrome truncates this at 132 characters."
+  },
+  "actionTitle": {
+    "message": "Duplicate tab",
+    "description": "Tooltip on the toolbar button."
+  },
+  "commandDuplicate": {
+    "message": "Duplicate tab",
+    "description": "Shortcut label in chrome://extensions/shortcuts."
+  },
+  "commandCloseOthers": {
+    "message": "Close other tabs",
+    "description": "Shortcut label in chrome://extensions/shortcuts."
+  },
+
+  "welcomeTitle": {
+    "message": "Duplicate Tab is ready",
+    "description": "Heading on the welcome page shown once after install."
+  },
+  "welcomeLede": {
+    "message": "Click the toolbar icon to duplicate the current tab, or use a keyboard shortcut.",
+    "description": "Subheading on the welcome page."
+  },
+  "shortcutNotSet": {
+    "message": "Not assigned",
+    "description": "Shown instead of keys when Chrome could not bind a shortcut."
+  },
+  "ctrlDHeading": {
+    "message": "Prefer Ctrl + D?",
+    "description": "Section heading about reassigning the duplicate shortcut."
+  },
+  "ctrlDBody": {
+    "message": "You can have it, but only by assigning it yourself. Chrome does not let an extension claim that combination out of the box, because it already belongs to “Bookmark this page”.",
+    "description": "Explains why Ctrl+D cannot be a default shortcut."
+  },
+  "ctrlDHow": {
+    "message": "Open the shortcuts page, find Duplicate Tab, and record Ctrl + D (Command + D on macOS) over the default.",
+    "description": "Step-by-step for reassigning the shortcut."
+  },
+  "openShortcuts": {
+    "message": "Open keyboard shortcuts",
+    "description": "Button that opens chrome://extensions/shortcuts."
+  },
+  "ctrlDNote": {
+    "message": "Heads up: this takes Ctrl + D away from bookmarking, and Chrome offers no way to move bookmarking somewhere else. You can still bookmark from the star icon in the address bar or the Bookmarks menu.",
+    "description": "Caveat about overriding the bookmark shortcut."
+  },
+  "closeOthersHeading": {
+    "message": "Close other tabs",
+    "description": "Section heading on the welcome page."
+  },
+  "closeOthersBody": {
+    "message": "Closes every tab in the current window except the active one. Pinned and grouped tabs are always spared, and closed tabs can be restored one at a time with Ctrl + Shift + T.",
+    "description": "Describes what the close-other-tabs command does."
+  },
+  "footerText": {
+    "message": "Free and open source. No analytics, no tracking, no network requests.",
+    "description": "Welcome page footer, followed by a link to the repository."
+  }
+}

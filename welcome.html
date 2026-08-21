@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="extName">Duplicate Tab</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --fg: #1f2328;
+    --fg-muted: #59636e;
+    --bg: #ffffff;
+    --bg-subtle: #f6f8fa;
+    --border: #d1d9e0;
+    --accent: #0969da;
+    --accent-fg: #ffffff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #f0f6fc;
+      --fg-muted: #9198a1;
+      --bg: #0d1117;
+      --bg-subtle: #151b23;
+      --border: #3d444d;
+      --accent: #4493f8;
+      --accent-fg: #0d1117;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 3rem 1.5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+
+  main {
+    max-width: 34rem;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    margin: 2.5rem 0 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  .lede {
+    margin: 0 0 2rem;
+    color: var(--fg-muted);
+  }
+
+  dl {
+    margin: 0;
+    padding: 0.25rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background: var(--bg-subtle);
+  }
+
+  dl div {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  dl div:last-child {
+    border-bottom: 0;
+  }
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  dd.unset {
+    color: var(--fg-muted);
+    font-style: italic;
+  }
+
+  kbd {
+    display: inline-block;
+    padding: 0.15em 0.5em;
+    border: 1px solid var(--border);
+    border-bottom-width: 2px;
+    border-radius: 0.35rem;
+    background: var(--bg);
+    font: inherit;
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
+
+  p {
+    margin: 0 0 0.75rem;
+  }
+
+  .note {
+    /* Buttons are inline-block, so this paragraph would otherwise butt right up
+       against the one above it. */
+    margin-top: 1.5rem;
+    color: var(--fg-muted);
+    font-size: 0.9rem;
+  }
+
+  button {
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: var(--accent-fg);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.9;
+  }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--fg-muted);
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 data-i18n="welcomeTitle">Duplicate Tab is ready</h1>
+  <p class="lede" data-i18n="welcomeLede">Click the toolbar icon to duplicate the current tab, or use a keyboard shortcut.</p>
+
+  <!-- Rebuilt from chrome.commands.getAll() so it shows what is really bound.
+       These rows are the fallback if that call yields nothing. -->
+  <dl id="shortcuts">
+    <div>
+      <dt>Duplicate tab</dt>
+      <dd><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd></dd>
+    </div>
+    <div>
+      <dt>Close other tabs</dt>
+      <dd><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd></dd>
+    </div>
+  </dl>
+
+  <h2 data-i18n="ctrlDHeading">Prefer Ctrl + D?</h2>
+  <p data-i18n="ctrlDBody">You can have it, but only by assigning it yourself. Chrome does not let an extension claim that combination out of the box, because it already belongs to “Bookmark this page”.</p>
+  <p data-i18n="ctrlDHow">Open the shortcuts page, find Duplicate Tab, and record Ctrl + D (Command + D on macOS) over the default.</p>
+  <button id="open-shortcuts" type="button" data-i18n="openShortcuts">Open keyboard shortcuts</button>
+  <p class="note" data-i18n="ctrlDNote">Heads up: this takes Ctrl + D away from bookmarking, and Chrome offers no way to move bookmarking somewhere else. You can still bookmark from the star icon in the address bar or the Bookmarks menu.</p>
+
+  <h2 data-i18n="closeOthersHeading">Close other tabs</h2>
+  <p data-i18n="closeOthersBody">Closes every tab in the current window except the active one. Pinned and grouped tabs are always spared, and closed tabs can be restored one at a time with Ctrl + Shift + T.</p>
+
+  <footer>
+    <span data-i18n="footerText">Free and open source. No analytics, no tracking, no network requests.</span>
+    <a href="https://github.com/zertosh/duplicate-tab">github.com/zertosh/duplicate-tab</a>
+  </footer>
+</main>
+<script src="welcome.js"></script>
+</body>
+</html>

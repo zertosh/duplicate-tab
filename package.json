@@ -1,0 +1,21 @@
+{
+  "name": "duplicate-tab",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Chrome extension to duplicate the current tab.",
+  "homepage": "https://github.com/zertosh/duplicate-tab",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p jsconfig.json",
+    "check": "npm run lint && npm run typecheck",
+    "zip": "rm -f duplicate-tab.zip && zip -r duplicate-tab.zip manifest.json service-worker.js welcome.html welcome.js _locales icon*.png LICENSE"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/chrome": "^0.2.6",
+    "eslint": "^10.8.1",
+    "globals": "^17.11.0",
+    "typescript": "^7.0.2"
+  }
+}
